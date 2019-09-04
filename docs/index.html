@@ -32,39 +32,99 @@
 			</p>
 
 			<p>
-				I am Luke_. I really love<br>
-				programming and want to have some place to store<br>
-				my projects, thats where i want to use this site<br>
-				for.<br>
+				I am luc de wit, and i personally really love programming, 
+				ive done it scince 2014 (by making terrible batch scripts)
 			</p>
 
 			<p>
-				I also decided to put a blog into this site,<br>
-				just so i can give more detailed information<br>
-				about what is going on in my life + what <br>
-				projects i am working on <br>
+				this website is meant to be a place where i can 
+				share how my life is going, how my projects are going
+				and what i am learning/have learned.
 			</p>
 
 			<p>
-				website testing:
+				i am currently still in the process of creating this
+				website wich will act like a blog and a portfolio
+				at the same time.
 			</p>
 
-			<pre class="code">
+			<p>
+				in the mean while here is a sneek peek of a code block
+				system i am working on (the syntax highlighting function
+				is partially taken from w3 but I modefied it to do what
+				i want it to do)
+			</p>
+
+
+			<p>HTML codeblock:</p>
+			<pre class="html">
 				<code>
 &lt;!DOCTYPE html>
 &lt;html>
 	&lt;head>
-		&lt;title>the title&lt;/title>
+		&lt;title>code block example&lt;/title>
 	&lt;/head>
-	&lt;body>
-		this is where the text
-		for the body goes
+	&lt;body class="test">
+		&lt;h1 id="wow">wow&lt;/h1> this code block&lt;br>
+		loos a-MAZE-ing!
 	&lt;/body>
 &lt;/html>
 				</code>
 			</pre>
 
+			<p>CSS codeblock:</p>
+			<pre class="css">
+				<code>
+*{
+	background-color: #F42069; /*420 69 lol*/
+	font-family: "Comic Sans";
+}
+
+.test{
+	color: blue;
+}
+
+#wow{
+	color: red;
+}
+				</code>
+			</pre>
+
+			<p>Javascript codeblock:</p>
+			<pre class="js">
+				<code>
+/*
+this will return the num'th fibonacci number
+also this is just a test for comments in codeblocks
+*/
+function fibonacci(num){
+  var a = 1, b = 0, temp;
+
+  while (num >= 0){
+    temp = a;
+    a = a + b;
+    b = temp;
+    num--;
+  }
+
+  return b;
+}
+
+let i = 0;
+
+while(true){
+	if (i == 69){
+		console.log("69 lol");
+	}
+
+	fibonacci(i);
+	i++;
+}
+				</code>
+			</pre>
+
 		</div>
 	</div>
+	<script type="text/javascript" src="codeColor.js"></script>
 </body>
 </html>
