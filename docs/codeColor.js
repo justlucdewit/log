@@ -2,21 +2,30 @@
 let color = [18, 29, 227];
 
 //gather codeblocks
-let html = document.getElementsByClassName("html");
-for (codeblock in html){
-	w3CodeColor(html[codeblock], "html");
-}
-
 let css = document.getElementsByClassName("css");
-for (codeblock in css){
-	w3CodeColor(css[codeblock], "css");
-}
-
+let html = document.getElementsByClassName("html");
 let js = document.getElementsByClassName("js");
-for (codeblock in js){
-	w3CodeColor(js[codeblock], "js");
+
+if (html.length > 0){
+	for (let i = 0; i <= html.length-1; i++){
+		console.log("h")
+		w3CodeColor(html[i]);
+	}
 }
 
+if (css.length > 0){
+	for (let i = 0; i <= css.length-1; i++){
+		console.log("c")
+		w3CodeColor(css[i], "css");
+	}
+}
+
+if (js.length > 0){
+	for (let i = 0; i <= css.length-1; i++){
+		console.log("j")
+		w3CodeColor(js[i], "js");
+	}
+}
 
 
 
@@ -34,18 +43,18 @@ function w3CodeColor(elmnt, mode) {
   var commentcolor = "green";
 
   //css colors
-  var cssselectorcolor = "brown";
+  var cssselectorcolor = "#0DF0F3";
   var csspropertycolor = "red";
   var csspropertyvaluecolor = "mediumblue";
-  var cssdelimitercolor = "black";
+  var cssdelimitercolor = "#FFF";
   var cssimportantcolor = "red";
 
   //javascript colors 
-  var jscolor = "black";
+  var jscolor = "red";
   var jskeywordcolor = "mediumblue";
-  var jsstringcolor = "brown";
-  var jsnumbercolor = "red";
-  var jspropertycolor = "black";
+  var jsstringcolor = "yellow";
+  var jsnumbercolor = "yellow";
+  var jspropertycolor = "green";
 
   if (!lang) {lang = "html"; }
   if (lang == "html") {elmntTxt = htmlMode(elmntTxt);}
