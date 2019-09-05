@@ -23,7 +23,6 @@ a, li{
 	list-style-type: none;
 	color: var(--main-color);
 	width: auto;
-	display: block;
 	width: 100px;
 }
 
@@ -179,4 +178,8 @@ ul{
 }
 
 .greentint{
+}
+
+p a{
+  color: blue;
 }
