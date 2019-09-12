@@ -18,7 +18,7 @@ body{
 	margin:0px;
 }
 
-a, li{
+a{
 	text-decoration: none;
 	list-style-type: none;
 	color: var(--main-color);
@@ -30,12 +30,18 @@ a:hover{
 	text-decoration: underline;
 }
 
-li{padding: 3px;}
+#nav > li{
+  padding: 1%;
+  list-style-type: none;
+}
 
-ul{
+#nav{
 	padding: 0px;
 	padding-left: 10px;
-	width: 60px;
+	width: 10%;
+  float: left;
+  margin: 10px;
+  border: var(--main-line-thinkness) solid var(--main-color);
 }
 
 #header{
@@ -57,17 +63,8 @@ ul{
   z-index: -1;
 }
 
-#nav{
-	float: left;
-	display: inline;
-	margin: 10px;
-	border: var(--main-line-thinkness) solid var(--main-color);
-	width: 180px;
-}
-
 #section{
 	float: left;
-	display: inline;
 	border: var(--main-line-thinkness) solid var(--main-color);
 	padding: 10px;
 	margin: 10px;
@@ -100,7 +97,6 @@ ul{
 
 .crt::after {
   content: " ";
-  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -114,7 +110,6 @@ ul{
 }
 .crt::before {
   content: " ";
-  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -182,4 +177,20 @@ ul{
 
 p a{
   color: blue;
+}
+
+::selection{
+  color: black;
+  background-color: var(--main-color);
+}
+
+@media only screen and (max-width: 1000px){
+  #nav{
+    width: calc(100% - 40px);
+  }
+
+  #nav > li{
+    width: 100px;
+    display: inline;
+  }
 }
