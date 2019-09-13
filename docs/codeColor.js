@@ -7,24 +7,24 @@ let html = document.getElementsByClassName("html");
 let js = document.getElementsByClassName("js");
 
 if (html.length > 0){
-	for (let i = 0; i <= html.length-1; i++){
-		console.log("h")
-		w3CodeColor(html[i]);
-	}
+  for (let i = 0; i <= html.length-1; i++){
+    console.log("h")
+    w3CodeColor(html[i]);
+  }
 }
 
 if (css.length > 0){
-	for (let i = 0; i <= css.length-1; i++){
-		console.log("c")
-		w3CodeColor(css[i], "css");
-	}
+  for (let i = 0; i <= css.length-1; i++){
+    console.log("c")
+    w3CodeColor(css[i], "css");
+  }
 }
 
 if (js.length > 0){
-	for (let i = 0; i <= css.length-1; i++){
-		console.log("j")
-		w3CodeColor(js[i], "js");
-	}
+  for (let i = 0; i <= css.length-1; i++){
+    console.log("j")
+    w3CodeColor(js[i], "js");
+  }
 }
 
 

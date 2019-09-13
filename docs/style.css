@@ -194,3 +194,7 @@ p a{
     display: inline;
   }
 }
+
+code{
+  display: block;
+}
