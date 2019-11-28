@@ -1,17 +1,17 @@
-let pageEl = document.getElementById("contentSpace");
+const pageEl = document.getElementById("contentSpace");
 
 function createPost(title, content){
     //create main post div
-    let postEl = document.createElement("div");
+    const postEl = document.createElement("div");
 
     //create and append title
-    let titleEl = document.createElement("h2");
+    const titleEl = document.createElement("h2");
     titleEl.innerText = title;
     postEl.appendChild(titleEl);
 
-    for (para of content){
+    for (const para of content){
         //create and append content
-        let contentEl = document.createElement("h3");
+        const contentEl = document.createElement("h3");
         contentEl.innerHTML = para;
         postEl.appendChild(contentEl);
     }
@@ -24,10 +24,10 @@ function createPost(title, content){
     pageEl.appendChild(postEl)
 }
 
-fetch("./posts.json").then((resp)=>{
-    return resp.json();
-}).then((data)=>{
-    for (const post of data){
-        createPost(post["title"], post["paragraphs"])
+fetch("./posts.json").then(res=>
+    res.json()
+).then((data)=>{
+    for (const {title, paragraphs} of data){
+        createPost(title, paragraphs);
     }
 });
