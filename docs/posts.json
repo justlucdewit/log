@@ -1,9 +1,16 @@
 [
-	{
-		"title":"First post",
-		"content":"If you see this message apear on your screen,\n then it means that my json loader is working!\n hurray"
+	{	
+		"data":"28-11-2019",
+		"title":"Loading from json data?!",
+		"paragraphs": [
+			"if you can read this text on my blog\n that means i have succesfully managed to get my site\n to display data from a json file, and i am verry happy :)"
+		]
 	},
-	{
-
+	{	
+		"data":"28-11-2019",
+		"title":"First post",
+		"paragraphs": ["If you see this message apear on your screen,\n then it means that my json loader is working!\n hurray",
+			"it is also able to generate MULTIPLE paragraphs!"
+		]
 	}
 ]

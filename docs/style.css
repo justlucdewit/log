@@ -16,11 +16,13 @@ h1{
 }
 
 h2{
-  font-size: 50px;
+  font-size: 45px;
+  margin-bottom: 0px;
 }
 
 h3{
-  font-size: 50px;
+  margin-top: 0px;
+  font-size: 30px;
 }
 
 h4{
@@ -196,9 +198,6 @@ a:hover{
   border-left: 5px solid var(--main-color);
 }
 
-.greentint{
-}
-
 p a{
   color: blue;
 }
@@ -214,7 +213,6 @@ p a{
   }
 
   #nav > li{
-    width: 100px;
     display: inline;
   }
 }
