@@ -2,7 +2,8 @@
 
 :root{
 	--main-bg-color: rgba(0, 0, 0, 0.95);
-	--main-color: #5dff54;
+  --main-color: #5dff54;
+  --second-color: #00ffbf;
 	--main-line-thinkness: 3px;
 }
 
@@ -17,6 +18,7 @@ h1{
 
 h2{
   font-size: 45px;
+  color: var(--second-color);
   margin-bottom: 0px;
 }
 
