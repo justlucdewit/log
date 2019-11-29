@@ -1,5 +1,17 @@
 [
 	{	
+		"data":"29-11-2019",
+		"title":"lukes programming log automatic post submitter",
+		"paragraphs": [
+			"Hello people from the internets!\nToday i have started working on something that will make it way more easy for me to create content for this blog",
+			"im currently still manually writing the json code, then manually pushing it to github wich i find a huge pain in the bum.",
+			"so i decited to start working on a windows application written in python and TKinter so i can type the post I want directly into a form and with a push of a button send it directly to the github servers so you guys can read it",
+			"the first part is completed, and I can actually use the form to type messages in, however i cant submit the text to github yet. but i might get that done this weekend!",
+			"for now I must still manually type the post manually into the json file and then manually push :(",
+			"that will change soon hopefully"
+		]
+	},
+	{	
 		"data":"28-11-2019",
 		"title":"Loading from json data?!",
 		"paragraphs": [
