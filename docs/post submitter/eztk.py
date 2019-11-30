@@ -11,6 +11,7 @@ class Window(Frame):
         self.bgcol="#FFFFFF"
         self.fgcol="#000000"
         self.pack(fill=BOTH, expand=1)
+        self.cursorColor="#000000"
 
     def set_size(self, width, height):
         self.master.geometry(f"{width}x{height}")
@@ -27,6 +28,10 @@ class Window(Frame):
         col = hexFromRgb(r, g, b)
         self.fgcol = col
 
+    def set_cursorColor(self, r, g, b):
+        col = hexFromRgb(r, g, b)
+        self.cursorColor = col 
+
     def launch(self):
         self.master.mainloop()
 
@@ -36,27 +41,35 @@ class Window(Frame):
         self.update()
         return eztk_Label(lbl.winfo_width(), lbl.winfo_height(), xpos, ypos)
 
-    def createButton(self, xpos, ypos, txt=""):
-        btn = Button(self, text=txt, bg=self.bgcol, fg=self.fgcol)
+    def createButton(self, xpos, ypos, txt="", action=None):
+        if action != None:
+            btn = Button(self, text=txt, bg=self.bgcol, fg=self.fgcol, command = action)
+        else:
+            btn = Button(self, text=txt, bg=self.bgcol, fg=self.fgcol)
         btn.place(x=xpos, y=ypos)
         self.update()
         return eztk_Button(btn.winfo_width(), btn.winfo_height(), xpos, ypos)
 
     def createInput(self, xpos, ypos, lineWidth, lines):
-        txt = Text(self, height=lines, width=lineWidth, bg=self.bgcol, fg=self.fgcol)
+        txt = Text(self, height=lines, width=lineWidth, bg=self.bgcol, fg=self.fgcol, insertbackground=self.cursorColor)
         txt.place(x=xpos, y=ypos)
         self.update()
-        return eztk_Input(txt.winfo_width(), txt.winfo_height(), xpos, ypos)
+        return eztk_Input(txt.winfo_width(), txt.winfo_height(), xpos, ypos, txt)
 
 class eztk_Input:
-    def __init__(self, width, height, x, y):
+    def __init__(self, width, height, x, y, obj):
         self.width = width
         self.height = height
         self.x = x
         self.y = y
+        self.obj = obj
 
     def show(self):
         print(f"Input[x:{self.x}, y:{self.y}, width:{self.width}, height:{self.height}]")
+
+    def retrieveInput(self):
+        content = self.obj.get("1.0", END)
+        return content[0:-1]
 
 class eztk_Label:
     def __init__(self, width, height, x, y):

@@ -1,5 +1,14 @@
 [
 	{	
+		"data":"23-11-2019",
+		"title":"Text extraction in log application",
+		"paragraphs": [
+			"Hello again, people from the internets!\ntoday, i have once again done some work on the blog post submitter app\nyester day i created the UI form, so i can start typing the posts\nyou're reading more easaly and now, I have done some tweaking\nof the UI and also managed to extract the text from the input boxes",
+			"so the next step would be to parse that string data into a json format\nso i can append that in the external json array, wich gets automaticly\nloaded and interpreted by the website hosted on github",
+			"soon i will hopefully be done with this blog and can start working on\nthe projects page, so you guys can check out all the cool stuff i made\nand am making!"
+		]
+	},
+	{	
 		"data":"29-11-2019",
 		"title":"lukes programming log automatic post submitter",
 		"paragraphs": [
