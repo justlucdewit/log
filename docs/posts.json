@@ -1,5 +1,15 @@
 [
 	{	
+		"data":"1-12-2019",
+		"title":"953th on advent of code",
+		"paragraphs": [
+			"Hello again, people of the internet!\ntoday i hadnt had alot of time to build on the autoposter\nbut ive been able to generate a time and start working on the text\nto json parser wich is a decent improvement",
+			"the reason I dont have much time today is beacause I have work today, and i also participated in the first day of advent of code! i tried to\nbe ready right when the first question lauches wich unfortunatly means\nthat I had to get up at 5:30 AM!!!",
+			"tomorow i will indeed have more time scince i can work at it at school\nhopefully i have the json code parser ready then!",
+			"see yall tomorrow!!!"
+		]
+	},
+	{	
 		"data":"23-11-2019",
 		"title":"Text extraction in log application",
 		"paragraphs": [
